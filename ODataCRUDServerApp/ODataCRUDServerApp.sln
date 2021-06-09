@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30524.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataCRUDServerApp", "ODataCRUDServerApp\ODataCRUDServerApp.csproj", "{F8AEDEA9-C0B3-481E-AFA3-D2BDC87AA05A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataServiceProject", "ODataServiceProject\ODataServiceProject.csproj", "{C76871A1-C15F-4940-B70D-FC514034AC9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8AEDEA9-C0B3-481E-AFA3-D2BDC87AA05A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8AEDEA9-C0B3-481E-AFA3-D2BDC87AA05A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8AEDEA9-C0B3-481E-AFA3-D2BDC87AA05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8AEDEA9-C0B3-481E-AFA3-D2BDC87AA05A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C76871A1-C15F-4940-B70D-FC514034AC9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C76871A1-C15F-4940-B70D-FC514034AC9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C76871A1-C15F-4940-B70D-FC514034AC9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C76871A1-C15F-4940-B70D-FC514034AC9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {330B12DA-932E-400D-AAD7-D8B2ADF41B25}
+	EndGlobalSection
+EndGlobal
