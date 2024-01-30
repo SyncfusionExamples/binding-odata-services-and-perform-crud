@@ -1,0 +1,28 @@
+﻿@page "/counter"
+@rendermode InteractiveAuto
+
+
+<SfGrid TValue="Order" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <SfDataManager Url="https://localhost:7200/odata/orders" Adaptor="Adaptors.ODataV4Adaptor"></SfDataManager>
+    <GridEditSettings AllowAdding="true" AllowDeleting="true" AllowEditing="true" Mode="EditMode.Normal"></GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.OrderId) HeaderText="Order ID" IsPrimaryKey="true" Visible="false" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Order.CustomerId) HeaderText="Customer Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+
+@code {
+    public class Order
+    {
+        public long OrderId { get; set; }
+
+        public string CustomerId { get; set; } = null!;
+
+        public int? Freight { get; set; }
+
+        public DateTime? OrderDate { get; set; }
+    }
+}
